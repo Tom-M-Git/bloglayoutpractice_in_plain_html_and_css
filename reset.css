@@ -1,0 +1,16 @@
+:root {
+    font: 20px/1.2 sans-serif;
+}
+
+body, body * {
+    margin: unset;
+    box-sizing: unset;
+    padding: unset;
+    font-size: unset;
+    color: unset;
+    text-decoration: unset;
+}
+
+figure * {
+    display: block;
+}

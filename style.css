@@ -1,0 +1,36 @@
+article {
+    display: grid;
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+
+    /* height: 100vh; */
+    padding: 0.5in 0;
+
+    background: linear-gradient(hsl(55, 100%, 96%), white 6.55rem);
+}
+
+article * {
+    grid-column: start / end;
+}
+
+h2, p {
+    margin-bottom: 2.4rem;
+}
+
+h1 { font: 700 2rem/1.2 sans-serif; color: hsl(0, 0%, 33%); }
+h2 { font: 400 1.5rem/1.2 sans-serif; color: hsl(0, 0%, 33%); }
+time { font: 700 1rem/1.2 sans-serif; color: hsl(250, 100%, 83%); }
+h3 { font: 700 1rem/1.2 sans-serif; color: hsl(250, 100%, 67%); }
+p { font: 400 1rem/1.5 sans-serif; color: hsl(0, 0%, 33%); }
+figcaption p { font: 400 1rem/1.5 sans-serif; color: hsl(0, 0%, 83%); }
+
+a { box-shadow: inset 0 -0.25em hsl(55, 100%, 75%); }
+
+@media (max-width: 8.5in) {
+    :root { font-size: 18px; }
+    article {
+        grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;
+    }
+}
+@media (max-width: 5.0in) {
+    :root { font-size: 16px; }
+}
